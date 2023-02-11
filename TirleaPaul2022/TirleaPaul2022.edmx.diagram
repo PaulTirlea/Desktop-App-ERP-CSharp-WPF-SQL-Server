@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="783e4c1ad811454ca859976a66b0b8a3" Name="Diagram1">
+        <EntityTypeShape EntityType="TirleaPaul2022.Category" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.Customer" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.Employee" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.LogIn" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.Product" Width="1.5" PointX="3" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.Shipper" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.Supplier" Width="1.5" PointX="0.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.OrderDetail" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.View_Orders_20" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.View_Orders_21" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.View_Orders_22" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.View_Orders_By_Category" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.View_Products_In_Stock" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TirleaPaul2022.View_Sales_Value" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="TirleaPaul2022.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="TirleaPaul2022.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="TirleaPaul2022.FK_Orders_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="TirleaPaul2022.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="TirleaPaul2022.FK_Orders_Shippers" ManuallyRouted="false" />
+        <AssociationConnector Association="TirleaPaul2022.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="TirleaPaul2022.FK_Products_Suppliers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

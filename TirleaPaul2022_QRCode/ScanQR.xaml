@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="TirleaPaul2022_QRCode.ScanQR"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TirleaPaul2022_QRCode"
+             xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="500" Loaded="UserControl_Loaded">
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" Margin="10" Text="Scanați cod QR" FontSize="22" FontFamily="Yu Gothic Medium" Foreground="{StaticResource PrimaryHueDarkBrush}"></TextBlock>
+            <Image Margin="10" Width="150" Height="150" x:Name="imageQR"/>
+            <StackPanel Orientation="Horizontal" Height="50">
+                <TextBlock Margin="10,0,20,0" x:Name="texBoxQR" FontSize="16" Width="400" Height="25"></TextBlock>
+                <Button VerticalAlignment="Center" ToolTip="Copiați textul" x:Name="buttonCopy" Foreground="White" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" Background="{StaticResource PrimaryHueDarkBrush}" Click="buttonCopy_Click">
+                    <materialDesign:PackIcon Kind="ContentCopy" Width="20" Height="20"/>
+                </Button>
+            </StackPanel>
+            <Button Margin="10" Name="buttonScanQR" HorizontalAlignment="Center" Height="50" Style="{StaticResource MaterialDesignRaisedDarkButton}" materialDesign:ButtonAssist.CornerRadius="25" Click="buttonScanQR_Click">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Qrcode" Margin="0,0,5,0" Height="25" Width="25"/>
+                    <TextBlock FontSize="16" Text="Scanați QR"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

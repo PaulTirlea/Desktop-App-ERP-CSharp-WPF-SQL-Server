@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="TirleaPaul2022_QRCode.CreateQR"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TirleaPaul2022_QRCode"
+             xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="500">
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" Margin="10" Text="Creați cod QR" FontSize="22" FontFamily="Yu Gothic Medium" Foreground="{StaticResource PrimaryHueDarkBrush}"></TextBlock>
+            <Image Margin="20,10" Height="150" x:Name="imageQR"/>
+            <TextBox Margin="20,10" x:Name="texBoxQR" FontSize="16" materialDesign:HintAssist.Hint="Introduceți textul pe care doriți să-l convertiți în cod QR" MaxLength="50"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Margin="5" x:Name="buttonCreateQR" HorizontalAlignment="Center" Height="50" Style="{StaticResource MaterialDesignRaisedDarkButton}" materialDesign:ButtonAssist.CornerRadius="25" Click="buttonCreateQR_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Qrcode" Margin="0,0,5,0" Height="25" Width="25"/>
+                        <TextBlock FontSize="16" Text="Creați QR"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="5" x:Name="buttonSaveQR" HorizontalAlignment="Center" Height="50" Style="{StaticResource MaterialDesignRaisedDarkButton}" materialDesign:ButtonAssist.CornerRadius="25" Click="buttonSaveQR_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ContentSave" Margin="0,0,5,0" Height="25" Width="25"/>
+                        <TextBlock FontSize="16" Text="Salvați QR"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
